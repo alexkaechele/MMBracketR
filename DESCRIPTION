@@ -1,13 +1,16 @@
 Package: MMBracketR
-Title: What the Package Does (One Line, Title Case)
+Title: Build March Madness Brackets in R
 Version: 0.0.0.9000
-Authors@R: 
-    person(given = "First",
-           family = "Last",
+Authors@R:
+    person(given = "Alex",
+           family = "Kaechele",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
+           email = "xkaech@example.com",
            comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: What the package does (one paragraph).
-License: What license it uses
+License: MIT see LISCENCE file
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 7.0.2
+Imports:
+	ggplot2 (>= 3.2.1)
