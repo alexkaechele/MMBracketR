@@ -1,8 +1,6 @@
 
 
 # TODO: Need to add option for play in game
-# TODO: Need to add ggplot2 to requirments
-
 
 #' Draws a Blank March Madness Bracket
 #'
