@@ -1,26 +1,25 @@
 
-
 # TODO: Need to add option for play in game
-# TODO: Need to add ggplot2 to requirments
 
 
 #' Draws a Blank March Madness Bracket
 #'
 #' Draws a blank bracket March Madness bracket as a ggplot object
 #'
-#'@param games: number of games to build a bracket for (32 is the default)
-#'@param playin: not available yet
+#'@param games: integer, number of games to build a bracket for (32 is the default)
+#'@param playin: vector of games that have a play-in game preceding it. playin =
+#'NA, then draws graph with no playin game
 #'
 #'@return a ggplot object of a blank march madness tournament
 #'
 #'@export
-PlotTourn <- function(games=32){
+plotTourn <- function(games=32, playin = NA){
 
   # Taking into consideration a game occurs on a line
   games <- games/4
 
   # Generate start and stop for line segment plots
-  lineCoord <- BracketLines(games = games)
+  lineCoord <- bracketLines(games = games, playin = playin)
 
   # Locations for labels
   regions <- c("Region X", "Region W", "Region Y", "Region Z", "Championship")
@@ -40,8 +39,8 @@ PlotTourn <- function(games=32){
 
 #' Determines X, Y Coordinates for MM Bracket
 #'
-#' Returns the beginning and end x,y coordinates for the line segments needed to build a two sided bracket.
-#' This function will likely only be used internally.
+#' Returns the beginning and end x,y coordinates for the line segments needed to
+#' build a two sided bracket. This function will likely only be used internally.
 #'
 #'@param games: number of games to build a bracket for (32 is the default)
 #'@param playin: not available yet
@@ -49,7 +48,7 @@ PlotTourn <- function(games=32){
 #'@return a data.frame of the beginning and end x and y coordinates to draw bracket
 #'
 #'@export
-BracketLines <- function(games){
+bracketLines <- function(games, playin){
 
   # Initialize vectors
   x1 <- c()
@@ -101,3 +100,6 @@ BracketLines <- function(games){
   return(data.frame(cbind(x1, x2, y1, y2)))
 
 }
+
+
+PlotTourn(games = 64)
