@@ -8,11 +8,10 @@ main <- function(){
 
 
   # Defining filepaths
-  rootpath <- "C:\\Users\\AK055125\\Documents\\Kaggle Data\\MarchMadness\\MDataFiles_Stage1\\"
-  validation <- paste0(rootpath, "MNCAATourneyCompactResults.csv")
-  training <- paste0(rootpath, "MRegularSeasonCompactResults.csv")
-  teamnames <- paste0(rootpath,"MTeams.csv")
-  teamseeds <- paste0(rootpath, "MNCAATourneySeeds.csv")
+  validation <- "data/NCAATourneyCompactResults.csv"
+  training <- "data/RegularSeasonCompactResults.csv"
+  teamnames <- "data/Teams.csv"
+  teamseeds <- "data/NCAATourneySeeds.csv"
 
 
   # Preprocess simulation data
