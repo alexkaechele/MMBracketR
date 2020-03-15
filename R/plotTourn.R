@@ -132,5 +132,3 @@ bracketLines <- function(games, playin){
 
 }
 
-
-plotTourn(games = 64)
