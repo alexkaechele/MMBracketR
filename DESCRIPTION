@@ -13,4 +13,6 @@ Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.0.2
 Imports:
-	ggplot2 (>= 3.2.1)
+	ggplot2 (>= 3.2.1),
+	data.table (>= 1.12.8),
+	rstan (>= 2.19.3)
