@@ -8,10 +8,10 @@ main <- function(){
 
 
   # Defining filepaths
-  validation <- "data/NCAATourneyCompactResults.csv"
-  training <- "data/RegularSeasonCompactResults.csv"
-  teamnames <- "data/Teams.csv"
-  teamseeds <- "data/NCAATourneySeeds.csv"
+  validation <- "data/raw/NCAATourneyCompactResults.csv"
+  training <- "data/raw/RegularSeasonCompactResults.csv"
+  teamnames <- "data/raw/Teams.csv"
+  teamseeds <- "data/raw/NCAATourneySeeds.csv"
 
 
   # Preprocess simulation data
