@@ -11,6 +11,7 @@ preprocess <- function(year, teamseeds, teamnames){
   
   # Loading in teams and seeds
   tournTeams <- fread(teamseeds)
+  print(tournTeams)
   
   # Filter to those in this year's tournament
   tournTeams <- tournTeams[Season==year]
